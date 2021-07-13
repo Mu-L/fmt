@@ -26,9 +26,9 @@
 **{fmt}** is an open-source formatting library providing a fast and safe
 alternative to C stdio and C++ iostreams.
 
-If you like this project, please consider donating to BY_Help,
-an initiative to help victims of political repressions in Belarus:
-https://www.facebook.com/donate/199475051809330/.
+If you like this project, please consider donating to the BYSOL
+Foundation that helps victims of political repressions in Belarus:
+https://bysol.org/en/bs/general/.
 
 `Documentation <https://fmt.dev>`__
 
@@ -137,16 +137,16 @@ Output::
 
 Output::
 
-    {1, 2, 3}
+    [1, 2, 3]
 
 **Check a format string at compile time**
 
 .. code:: c++
 
-    std::string s = fmt::format(FMT_STRING("{:d}"), "I am not a number");
+    std::string s = fmt::format("{:d}", "I am not a number");
 
-This gives a compile-time error because ``d`` is an invalid format specifier for
-a string.
+This gives a compile-time error in C++20 because ``d`` is an invalid format
+specifier for a string.
 
 **Write a file from a single thread**
 
@@ -336,7 +336,14 @@ Projects using this library
 
 * `FiveM <https://fivem.net/>`_: a modification framework for GTA V
 
+* `fmtlog <https://github.com/MengRao/fmtlog>`_: a performant fmtlib-style
+  logging library with latency in nanoseconds
+
 * `Folly <https://github.com/facebook/folly>`_: Facebook open-source library
+
+* `Grand Mountain Adventure
+  <https://store.steampowered.com/app/1247360/Grand_Mountain_Adventure/>`_:
+  A beautiful open-world ski & snowboarding game
 
 * `HarpyWar/pvpgn <https://github.com/pvpgn/pvpgn-server>`_:
   Player vs Player Gaming Network with tweaks
